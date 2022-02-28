@@ -1,0 +1,36 @@
+:root {
+  --white-color: #FFFFFF;
+}
+
+.section-market {
+  width: 100%;
+}
+
+.contente-market {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 86%;
+  min-height: 100vh;
+
+  background: url('../assets/images/background-tendencia.jpg') no-repeat;
+  background-size: cover;
+
+  margin: 0 auto;
+}
+
+.cont-market-1 h4 {
+  text-align: center;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 45px;
+
+  color: var(--white-color);
+}
+
+.cont-market-2 p {
+  font-family: 'Roboto', sans-serif;
+  color: var(--white-color);
+}

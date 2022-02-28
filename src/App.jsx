@@ -1,10 +1,14 @@
 import React from 'react';
 
+import './styles/Main.css';
+
+import SectionSudiovisualMarket from './components/sections/SectionSudiovisualMarket';
+
 function App() {
   return (
-    <div>
-      <h1>Olá yarn</h1>
-    </div>
+    <main>
+      <SectionSudiovisualMarket />
+    </main>
   );
 }
 
