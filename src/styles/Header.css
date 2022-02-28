@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.video-header {
+  position: fixed;
+  z-index: -1;
+  min-width: 100%;
+}
+
+.nav-bar {
+  background-color: inherit;
+  transition: 0.5s;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 200;
+}
+
+.container {
+  display: flex;
+  max-width: 90%;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: #FFFF;
+  font-size: calc(75% + 0.8vmin);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffffffb1;
+  border-bottom: 1px solid red;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.logoGusta {
+  width: 130px;
+}
+
+.nav-link {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ActiveScroll {
+  transition: 0.5s;
+  background-color: #252525a9;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  z-index: 1;
+}
+
+
+@media ( max-width: 991px) {
+  .navbar-nav {
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-link {
+    width: 85%;
+  }
+
+  .navbar-brand img {
+    width: 200px;
+  }
+
+  .apresentation-title h1 {
+    margin-top: 40px;
+  }
+
+  .active_header {
+    background-color: #252525;
+  }
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
+}
