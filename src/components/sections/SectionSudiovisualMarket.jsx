@@ -4,7 +4,7 @@ import '../../styles/SectionSudiovisualMarket.css';
 
 function SectionSudiovisualMarket() {
   return (
-    <sections className="section-market">
+    <section className="section-market">
       <div className="contente-market">
         <div className="cont-market-1">
           <h4>QUAL É A TENDÊNCIA QUE MAIS</h4>
@@ -18,7 +18,7 @@ function SectionSudiovisualMarket() {
           </p>
         </div>
       </div>
-    </sections>
+    </section>
   );
 }
 
