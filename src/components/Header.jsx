@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <div>
-      <header id="home">
+      <header id="home" className="home">
         <Navbar variant="light" expand="lg" className="nav-bar">
           <Container>
             <Navbar.Brand href="#home">
