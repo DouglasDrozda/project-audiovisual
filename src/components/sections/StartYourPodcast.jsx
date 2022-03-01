@@ -1,8 +1,9 @@
 import React from 'react';
 
-import data from '../../../posdcast';
+import Swiper from '../Swiper';
 
 import '../../styles/StartYourPodcast.css';
+import data from '../../../posdcast';
 
 function StartYourPodcast() {
   return (
@@ -26,19 +27,7 @@ function StartYourPodcast() {
             </p>
           </div>
         </div>
-        <div className="cont-podcast-card">
-          {
-            data.map((item) => (
-              <div key={item.title} className="card-podcast">
-                <img src={item.img} alt={item.title} width="52px" />
-                <h3>{ item.title }</h3>
-                <div className="cont-description">
-                  <p>{ item.description }</p>
-                </div>
-              </div>
-            ))
-          }
-        </div>
+        <Swiper />
       </div>
     </section>
   );
