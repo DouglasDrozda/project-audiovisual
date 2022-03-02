@@ -15,14 +15,20 @@ function SwiperApp() {
 
 
   const displayVerify = () => {
-    let screenWidth = screen.width;
+    let screenWidth = window.innerWidth;
 
     if (screenWidth >= 931) {
       setActiveTouch(false);
+      return;
     }
 
     setActiveTouch(true);
+    return;
   }
+
+  window.addEventListener('resize', () => {
+    displayVerify();
+  });
 
   useEffect(() => {
     displayVerify();
