@@ -3,6 +3,7 @@ import Header from './components/Header';
 
 import SectionSudiovisualMarket from './components/sections/SectionSudiovisualMarket';
 import StartYourPodcast from './components/sections/StartYourPodcast';
+import SectionAboutCompany from './components/sections/SectionAboutCompany';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <SectionSudiovisualMarket />
       <StartYourPodcast />
+      <SectionAboutCompany />
     </main>
   );
 }
