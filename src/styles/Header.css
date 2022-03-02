@@ -5,11 +5,157 @@
   box-sizing: border-box;
 }
 
-header {
+.ActiveScroll {
+  background-color: #0a0a0a;
+  display: flex;
   width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
+  transition: 0.5s;
+  height: 120px;
+  position: fixed;
+  z-index: 50;
 }
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+}
+
+.header-sub-container {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.nav-container {
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-container a:hover {
+  border-bottom: 1px solid red;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+
+.container-hamburger {
+  background-color: #0a0a0a;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-sub-hamburger {
+  margin: 10px;
+  width: 90%;
+}
+
+.menu-item {
+  color: white;
+  border-bottom: 1px solid rgba(146, 146, 146, 0.39);
+  margin: 10px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu-item:hover {
+  color: rgba(126, 126, 126, 0.445);
+}
+
+.btn-contact {
+  border: 2px solid white;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin: 50px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-contact:hover {
+  background-color: #0a0a0a;
+  border: none;
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #ffffff;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a8a8a8;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #191D18;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
 
 .video-header {
   position: fixed;
@@ -17,77 +163,11 @@ header {
   min-width: 100%;
 }
 
-.nav-bar {
-  background-color: inherit;
-  transition: 0.5s;
-  width: 100%;
-  display: flex;
-  position: fixed;
-  z-index: 200;
-}
-
-.container {
-  display: flex;
-  max-width: 90%;
-}
-
-.navbar-collapse {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-}
-
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #FFFF;
-  font-size: calc(75% + 0.8vmin);
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #ffffffb1;
-  border-bottom: 1px solid red;
-  transform: scale(1.1);
-  transition: 0.4s;
-}
-
 .logoGusta {
   width: 130px;
 }
 
-.nav-link {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: 0 5px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.ActiveScroll {
-  transition: 0.5s;
-  background-color: #0a0a0a;
-  width: 100%;
-  height: 120px;
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  z-index: 1;
-}
-
-
 @media ( max-width: 991px) {
-  .navbar-nav {
-    width: 100%;
-    align-items: center;
-  }
-
-  .nav-link {
-    width: 85%;
-  }
-
-  .navbar-brand img {
-    width: 200px;
-  }
-
   .apresentation-title h1 {
     margin-top: 40px;
   }

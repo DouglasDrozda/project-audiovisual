@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../styles/Schedule.css';
-// import ScheduleInfo from './ScheduleInfo';
 
 function Schedule() {
   return (

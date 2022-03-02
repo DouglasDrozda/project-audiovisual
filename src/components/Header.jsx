@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { stack as Menu } from 'react-burger-menu';
 import ActiveScroll from '../functions/main';
 import '../styles/Header.css';
 import logoGustaFilms from '../assets/images/logoGustaFilms.png';
@@ -8,36 +9,53 @@ function Header() {
   useEffect(() => {
     ActiveScroll();
   }, []);
+  const screenWidth = window.innerWidth;
 
   return (
     <div>
-      <header>
-        <Navbar variant="dark" expand="lg" className="nav-bar">
-          <Container>
-            <Navbar.Brand href="#home">
-              <img src={logoGustaFilms} alt="logotipo-Gusta-Films" className="logoGusta" />
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav>
-                <Nav.Link className="navLink" href="#sobrenos">SOBRE NÓS</Nav.Link>
-                <Nav.Link className="navLink" href="#comeceseupodcast">COMECE SEU PODCAST</Nav.Link>
-                <Nav.Link className="navLink" href="#sevicos">SERVIÇOS</Nav.Link>
-                <Nav.Link className="navLink" href="#portfolio">PORTFÓLIO</Nav.Link>
-                <Nav.Link className="navLink" href="#contato">CONTATO</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-        <video loop muted autoPlay className="video-header">
-          <source src="https://cdn-prod-ccv.adobe.com/-BPyu3eZxyS/rend/-BPyu3eZxyS_576.mp4?hdnts=st%3D1646086968%7Eexp%3D1646346168%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2F-BPyu3eZxyS%2Frend%2F*%21%2Fi%2F-BPyu3eZxyS%2Frend%2F*%21%2F-BPyu3eZxyS%2Frend%2F*%21%2F-BPyu3eZxyS%2Fimage%2F*%7Ehmac%3D50191da5b188b3de9e5e15e96ebb0cb1cb674471d07d04906e561d8d2dad1ee9" type="video/mp4" />
-          <source src="media/Cover - A Thousand Years.ogg" type="video/ogg" />
-          <source src="media/Cover - A Thousand Years.webm" type="video/webm" />
-          Formato de vídeo não suportado
-        </video>
-      </header>
+      {
+        screenWidth >= 950 ? (
+          <header className="header-container">
+            <div className="header-sub-container">
+              <a href="#">
+                <img src={logoGustaFilms} alt="logotipo-Gusta-Films" className="logoGusta" />
+              </a>
+              <nav className="nav-container">
+                <a href="#">SOBRE NÓS</a>
+                <a href="#comeceseupodcast">COMECE SEU PODCAST</a>
+                <a href="#">SERVIÇOS</a>
+                <a href="#">PORTFÓLIO</a>
+                <a href="#">CONTATO</a>
+              </nav>
+            </div>
+          </header>
+        ) : (
+          <div className="container-hamburger">
+            <Menu right>
+              <a id="home" className="menu-item" href="#">SOBRE NÓS</a>
+              <a id="about" className="menu-item" href="#comeceseupodcast">COMECE SEU PODCAST</a>
+              <a id="contact" className="menu-item" href="#">SERVIÇOS</a>
+              <a id="contact" className="menu-item" href="#">PORTFOLIO</a>
+              <a id="contact" className="menu-item" href="#">CONTATO</a>
+              <a href="#" target="_blank" className="btn-contact">PEDIR ORÇAMENTO</a>
+            </Menu>
+            <div className="container-sub-hamburger">
+              <a href="#">
+                <img src={logoGustaFilms} alt="logotipo-Gusta-Films" className="logoGusta" />
+              </a>
+            </div>
+          </div>
+        )
+      }
     </div>
   );
 }
 
 export default Header;
+
+        // <video loop muted autoPlay className="video-header">
+        //   <source src="https://cdn-prod-ccv.adobe.com/-BPyu3eZxyS/rend/-BPyu3eZxyS_576.mp4?hdnts=st%3D1646086968%7Eexp%3D1646346168%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2F-BPyu3eZxyS%2Frend%2F*%21%2Fi%2F-BPyu3eZxyS%2Frend%2F*%21%2F-BPyu3eZxyS%2Frend%2F*%21%2F-BPyu3eZxyS%2Fimage%2F*%7Ehmac%3D50191da5b188b3de9e5e15e96ebb0cb1cb674471d07d04906e561d8d2dad1ee9" type="video/mp4" />
+        //   <source src="media/Cover - A Thousand Years.ogg" type="video/ogg" />
+        //   <source src="media/Cover - A Thousand Years.webm" type="video/webm" />
+        //   Formato de vídeo não suportado
+        // </video>
