@@ -3,7 +3,6 @@ import React from 'react';
 import Swiper from '../Swiper';
 
 import '../../styles/StartYourPodcast.css';
-import data from '../../../posdcast';
 
 function StartYourPodcast() {
   return (
