@@ -37,26 +37,12 @@
   display: flex;
 }
 
-.nav-container a {
-  text-decoration: none;
-  color: #fff;
-  margin: 0 20px;
-  list-style: none;
-  font-family: 'Poppins', sans-serif;
-}
-
-.nav-container a:hover {
-  border-bottom: 1px solid red;
-  cursor: pointer;
-  transform: scale(1.2);
-  transition: all 0.4s;
-}
-
 .container-hamburger {
   background-color: #0a0a0a;
   width: 100%;
   display: flex;
   justify-content: center;
+
 }
 
 .container-sub-hamburger {
@@ -69,6 +55,9 @@
   border-bottom: 1px solid rgba(146, 146, 146, 0.39);
   margin: 10px 0;
   font-family: 'Poppins', sans-serif;
+=======
+  margin: 0 5px;
+  font-family: "Poppins", sans-serif;
 }
 
 .menu-item:hover {
@@ -103,6 +92,7 @@
   top: 36px;
 }
 
+
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #ffffff;
@@ -112,6 +102,13 @@
 .bm-burger-bars-hover {
   background: #a8a8a8;
 }
+=======
+@media (max-width: 991px) {
+  .navbar-nav {
+    width: 100%;
+    align-items: center;
+  }
+
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
@@ -176,7 +173,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .active_header {
     background-color: #252525;
   }
-
 }
 
 @media (min-aspect-ratio: 16/9) {
