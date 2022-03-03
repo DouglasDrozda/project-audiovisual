@@ -6,7 +6,7 @@ import '../../styles/StartYourPodcast.css';
 
 function StartYourPodcast() {
   return (
-    <section className="section-podcast">
+    <section className="section-podcast" id="comeceseupodcast">
       <div className="cont-podcast-header">
         <hr />
         <h2>COMECE SEU PODCAST</h2>
