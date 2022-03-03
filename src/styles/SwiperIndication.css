@@ -18,12 +18,13 @@
 .cont-title-img {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 10px;
-  width: 94%;
+  width: 100%;
 }
 
 .cont-title-img h3 {
+  text-align: initial;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: calc(75% + 1.5vmin);
