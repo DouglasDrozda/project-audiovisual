@@ -41,7 +41,6 @@ header {
   width: 100%;
 }
 
-
 .navbar-dark .navbar-nav .nav-link {
   color: #FFFF;
   font-size: calc(75% + 0.8vmin);
@@ -49,7 +48,6 @@ header {
 
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #ffffffb1;
-  border-bottom: 1px solid red;
   transform: scale(1.1);
   transition: 0.4s;
 }
@@ -63,7 +61,7 @@ header {
   display: flex;
   justify-content: center;
   margin: 0 5px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .ActiveScroll {
@@ -76,8 +74,7 @@ header {
   z-index: 1;
 }
 
-
-@media ( max-width: 991px) {
+@media (max-width: 991px) {
   .navbar-nav {
     width: 100%;
     align-items: center;
@@ -98,7 +95,6 @@ header {
   .active_header {
     background-color: #252525;
   }
-
 }
 
 @media (min-aspect-ratio: 16/9) {
