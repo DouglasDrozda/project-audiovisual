@@ -1,0 +1,75 @@
+.schedule-container {
+  align-items: center;
+  background-color: #1C1C1A;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+hr {
+  border: 1px solid rgb(255, 255, 255);
+  width: 20%;
+}
+
+.schedule-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+  width: 100%;
+}
+
+.schedule-title h2 {
+  color: #FFFF;
+  font-size: calc(75% + 3.5vmin);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.planejamento, .producao, .edicao, .distribuicao {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.planejamento {
+  color: #FA4A4A;
+}
+
+
+.producao {
+  color: #66C15F;
+}
+
+.edicao {
+  color: #4EAAEC;
+}
+
+.distribuicao {
+  color: #D4228F;
+}
+
+.description {
+  color: #B2B2B2;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(75% + 1.2vmin);
+}
+
+@media (max-width: 1562px) {
+  .schedule-title h2 {
+    font-size: calc(75% + 2.5vmin);
+  }
+}
+
+@media (max-width: 794px) {
+  .schedule-title h2 {
+    font-size: calc(75% + 1.5vmin);
+  }
+}
+
+@media (max-width: 500px) {
+  .schedule-title h2 {
+    font-size: calc(75% + 1vmin);
+  }
+}
