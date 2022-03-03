@@ -5,6 +5,7 @@ import StartYourPodcast from './components/sections/StartYourPodcast';
 import Schedule from './components/sections/Schedule';
 import VideoService from './components/sections/VideoService';
 import SectionAboutCompany from './components/sections/SectionAboutCompany';
+import Marketplace from './components/sections/Marketplace';
 import SectionIndications from './components/sections/SectionIndications';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Schedule />
       <VideoService />
       <SectionIndications />
+      <Marketplace />
       <SectionAboutCompany />
     </main>
   );
