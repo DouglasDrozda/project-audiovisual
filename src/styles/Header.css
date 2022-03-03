@@ -156,11 +156,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: inline-block;
 }
 
-
 .video-header {
-  position: fixed;
-  z-index: -1;
-  min-width: 100%;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .logoGusta {
