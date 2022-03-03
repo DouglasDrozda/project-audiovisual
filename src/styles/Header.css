@@ -45,6 +45,21 @@
 
 }
 
+.nav-container a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-container a:hover {
+  border-bottom: 1px solid red;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+
 .container-sub-hamburger {
   margin: 10px;
   width: 90%;
@@ -55,9 +70,6 @@
   border-bottom: 1px solid rgba(146, 146, 146, 0.39);
   margin: 10px 0;
   font-family: 'Poppins', sans-serif;
-=======
-  margin: 0 5px;
-  font-family: "Poppins", sans-serif;
 }
 
 .menu-item:hover {
@@ -102,13 +114,13 @@
 .bm-burger-bars-hover {
   background: #a8a8a8;
 }
-=======
+
 @media (max-width: 991px) {
   .navbar-nav {
     width: 100%;
     align-items: center;
   }
-
+}
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
