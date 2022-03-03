@@ -46,10 +46,6 @@
   padding: 5px 0;
 }
 
-/* .main-swiper .swiper-wrapper {
-  transform: none !important;
-} */
-
 @media (max-width: 930px) {
   .swiper-horizontal
     > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,

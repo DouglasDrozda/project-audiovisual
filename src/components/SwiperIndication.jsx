@@ -2,17 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import SwiperCore, { Pagination } from 'swiper';
-import data from '../../posdcast';
+import data from '../../indications';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import '../styles/Swiper.css';
+import '../styles/SwiperIndication.css';
 
 SwiperCore.use([Pagination]);
 
 function SwiperApp() {
   const [ activeTouch, setActiveTouch ] = useState();
-
 
   const displayVerify = () => {
     let screenWidth = window.innerWidth;
@@ -35,27 +34,29 @@ function SwiperApp() {
   }, [])
 
   return (
-    <div id="swiper-app">
+    <div id="swiper-app" className="cont-indication-card">
       <Swiper
         pagination={{ dynamicBullets: true }}
         allowSlideNext={ activeTouch }
         allowSlidePrev={ activeTouch }
         className="mySwiper main-swiper"
       >
-        <div className="cont-podcast-card">
+        <div>
           {
-          data.map((item) => (
-            <SwiperSlide key={item.title}>
-              <div className="card-podcast">
-                <img src={item.img} alt={item.title} width="52px" />
-                <h3>{ item.title }</h3>
-                <div className="cont-description">
-                  <p>{ item.description }</p>
+            data.map((item) => (
+              <SwiperSlide key={item.title}>
+                <div className="card-indication">
+                  <div className="cont-title-img">
+                    <h3>{ item.title }</h3>
+                    <img src={item.img} alt={item.title} width="70px" />
+                  </div>
+                  <div className="cont-description-indication">
+                    <p>{ item.description }</p>
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))
-        }
+              </SwiperSlide>
+            ))
+          }
         </div>
       </Swiper>
     </div>
