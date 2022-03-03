@@ -15,11 +15,11 @@
   width: 100%;
 }
 
-.cont-title h1 {
+.cont-title h2 {
   margin-top: 10px;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-size: calc(75% + 4.5vmin);
+  font-size: calc(75% + 3.5vmin);
   font-weight: 700;
   color: white;
 }
@@ -34,10 +34,9 @@
 .cont-text p {
   width: 60%;
   color: #b2b2b2;
-  text-align: justify;
+  text-align: left;
   font-family: "Roboto", sans-serif;
-  font-size: calc(75% + 1.5vmin);
-  font-weight: 500;
+  font-size: calc(75% + 1.2vmin);
 }
 
 .cont-img {
@@ -45,13 +44,12 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 30px;
 }
 
 .cont-img img {
-  width: 25%;
-  min-width: 150px;
+  opacity: 0.8;
+  margin: 50px 0;
+  width: 300px;
 }
 
 @media (max-width: 785px) {

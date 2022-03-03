@@ -21,7 +21,7 @@ function Header() {
                 <img src={logoGustaFilms} alt="logotipo-Gusta-Films" className="logoGusta" />
               </a>
               <nav className="nav-container">
-                <a href="#">SOBRE NÓS</a>
+                <a href="#sobre">SOBRE NÓS</a>
                 <a href="#comeceseupodcast">COMECE SEU PODCAST</a>
                 <a href="#">SERVIÇOS</a>
                 <a href="#">PORTFÓLIO</a>
@@ -32,11 +32,11 @@ function Header() {
         ) : (
           <div className="container-hamburger">
             <Menu right>
-              <a id="home" className="menu-item" href="#">SOBRE NÓS</a>
-              <a id="about" className="menu-item" href="#comeceseupodcast">COMECE SEU PODCAST</a>
-              <a id="contact" className="menu-item" href="#">SERVIÇOS</a>
-              <a id="contact" className="menu-item" href="#">PORTFOLIO</a>
-              <a id="contact" className="menu-item" href="#">CONTATO</a>
+              <a className="menu-item" href="#sobre">SOBRE NÓS</a>
+              <a className="menu-item" href="#comeceseupodcast">COMECE SEU PODCAST</a>
+              <a className="menu-item" href="#">SERVIÇOS</a>
+              <a className="menu-item" href="#">PORTFOLIO</a>
+              <a className="menu-item" href="#">CONTATO</a>
               <a href="#" target="_blank" className="btn-contact">PEDIR ORÇAMENTO</a>
             </Menu>
             <div className="container-sub-hamburger">
