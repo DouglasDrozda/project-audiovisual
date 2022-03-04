@@ -35,13 +35,12 @@ hr p {
   font-size: calc(75% + 3.5vmin);
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  margin: 0 7%;
 }
 
 .cont-podcast-text h5 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: calc(75% + 2.2vmin);
+  font-size: calc(75% + 1.8vmin);
   color: #686868;
   margin-bottom: 30px;
 }

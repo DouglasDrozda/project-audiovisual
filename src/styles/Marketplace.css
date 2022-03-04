@@ -33,6 +33,11 @@
   width: 60%;
 }
 
+.marketplace-text img {
+  margin: 0 10px;
+  width: 40px;
+}
+
 .marketplace-text p {
   color: #FFFF;
   font-family: "Roboto", sans-serif;
