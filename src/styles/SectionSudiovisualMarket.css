@@ -17,7 +17,7 @@
   justify-content: center;
 
   width: 86%;
-  min-height: 100vh;
+  min-height: 80vh;
   margin: 0 auto;
 }
 
@@ -42,6 +42,21 @@
   color: var(--white-color);
 }
 
+@media (max-width: 950px) {
+  .section-market {
+    margin-top: 50%;
+  }
+
+  .cont-market-1 h4 {
+    font-size: calc(75% + 2.5vmin);
+  }
+
+  .cont-market-2 {
+    width: 70%;
+  }
+
+}
+
 @media (max-width: 800px) {
   .cont-market-2 {
     width: 90%;
@@ -55,5 +70,11 @@
 
   .contente-market {
     min-height: 80vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-market {
+    margin-top: 70%;
   }
 }
