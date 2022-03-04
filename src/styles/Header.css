@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+.header-contain {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.video-header {
+  position: static;
+  width: 100%;
+}
+
 .ActiveScroll {
   background-color: #0a0a0a;
   display: flex;
@@ -163,14 +174,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Individual item */
 .bm-item {
   display: inline-block;
-}
-
-.video-header {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
 }
 
 .logoGusta {
