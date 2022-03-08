@@ -53,7 +53,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-
 }
 
 .nav-container a {
@@ -61,7 +60,7 @@
   color: #fff;
   margin: 0 20px;
   list-style: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-container a:hover {
@@ -80,7 +79,7 @@
   color: white;
   border-bottom: 1px solid rgba(146, 146, 146, 0.39);
   margin: 10px 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .menu-item:hover {
@@ -93,7 +92,7 @@
   padding: 15px;
   text-align: center;
   margin: 50px 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-decoration: none;
 }
@@ -114,7 +113,6 @@
   right: 36px;
   top: 36px;
 }
-
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
@@ -155,7 +153,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #191D18;
+  background: #191d18;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -180,7 +178,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
   width: 130px;
 }
 
-@media ( max-width: 991px) {
+@media (max-width: 991px) {
+  .bm-burger-button {
+    position: absolute;
+  }
+
   .apresentation-title h1 {
     margin-top: 40px;
   }

@@ -6,10 +6,13 @@ import '../styles/Header.css';
 import logoGustaFilms from '../assets/images/logoGustaFilms.png';
 
 function Header() {
-  useEffect(() => {
-    ActiveScroll();
-  }, []);
   const screenWidth = window.innerWidth;
+
+  useEffect(() => {
+    if (screenWidth >= 950) {
+      ActiveScroll();
+    }
+  }, []);
 
   return (
     <div className="header-contain">
