@@ -3,7 +3,7 @@
 }
 
 .section-market {
-  margin-top: 50%;
+  margin-top: 56%;
   width: 100%;
 
   background: url("../assets/images/background-tendencia.jpg") no-repeat;
@@ -44,7 +44,7 @@
 
 @media (max-width: 950px) {
   .section-market {
-    margin-top: 50%;
+    margin-top: 68%;
   }
 
   .cont-market-1 h4 {
@@ -54,7 +54,6 @@
   .cont-market-2 {
     width: 70%;
   }
-
 }
 
 @media (max-width: 800px) {
@@ -73,8 +72,14 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .section-market {
-    margin-top: 70%;
+    margin-top: 75%;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-market {
+    margin-top: 84%;
   }
 }

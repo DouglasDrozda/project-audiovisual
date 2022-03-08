@@ -1,11 +1,9 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/media-has-caption */
 import React, { useState } from 'react';
-import '../../styles/Portfolio.css';
 import { Modal } from 'react-bootstrap';
-import data from '../../services/data';
-import play from '../../assets/icons/play.png';
+
+import { SwiperPortfolio } from '../SwiperPortfolio';
+
+import '../../styles/Portfolio.css';
 
 function Portfolio() {
   const [urlVideo, setUrlVideo] = useState('');
@@ -43,35 +41,7 @@ function Portfolio() {
                 />
               </Modal.Header>
             </Modal>
-            <div className="description-video-container">
-              {
-                Object.values(data).map((video) => (
-                  <div className="description-video" key={video.id}>
-                    <video
-                      poster={video.poster}
-                      className="video_play"
-                      onClick={
-                        () => {
-                          handleClick(video.url);
-                          handleShow();
-                        }
-                      }
-                    />
-                    <div
-                      className="on_play"
-                      onClick={
-                        () => {
-                          handleClick(video.url);
-                          handleShow();
-                        }
-                      }
-                    >
-                      <img src={play} alt="play" />
-                    </div>
-                  </div>
-                ))
-              }
-            </div>
+            <SwiperPortfolio handleClick={handleClick} handleShow={handleShow} />
           </div>
         </div>
       </div>
