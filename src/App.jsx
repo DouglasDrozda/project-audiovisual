@@ -7,6 +7,7 @@ import VideoService from './components/sections/VideoService';
 import SectionAboutCompany from './components/sections/SectionAboutCompany';
 import Marketplace from './components/sections/Marketplace';
 import SectionIndications from './components/sections/SectionIndications';
+import Portfolio from './components/sections/Portfolio';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <SectionIndications />
       <Marketplace />
       <SectionAboutCompany />
+      <Portfolio />
     </main>
   );
 }
