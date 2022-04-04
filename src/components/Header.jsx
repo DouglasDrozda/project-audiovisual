@@ -1,23 +1,45 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { stack as Menu } from 'react-burger-menu';
 import ActiveScroll from '../functions/main';
-import '../styles/Header.css';
 import logoGustaFilms from '../assets/images/logoGustaFilms.png';
+import '../styles/Header.css';
 
 function Header() {
   const screenWidth = window.innerWidth;
+  const [resolution, setResolution] = useState(screenWidth)
+  const [activeButton, setActiveButton] = useState();
+  console.log(resolution);
+
+
+  const displayVerify = () => {
+    setResolution(screenWidth)
+
+    if (resolution >= 950) {
+      setActiveButton(false);
+      return;
+    }
+
+    setActiveButton(true);
+  };
+
+  // window.addEventListener('resize', () => {
+  //   displayVerify()
+  // });
 
   useEffect(() => {
     if (screenWidth >= 950) {
-      ActiveScroll();
+      ActiveScroll(screenWidth);
+      setActiveButton(false);
+      return;
     }
+
+    setActiveButton(true)
   }, []);
 
   return (
     <div className="header-contain">
       {
-        screenWidth >= 950 ? (
+        !activeButton ? (
           <header className="header-container">
             <div className="header-sub-container">
               <a href="#">

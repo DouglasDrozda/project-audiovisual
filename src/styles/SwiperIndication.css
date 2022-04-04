@@ -1,11 +1,3 @@
-.swiper-wrapper {
-  justify-content: space-around;
-}
-
-.swiper-backface-hidden .swiper-slide {
-  width: 410px !important;
-}
-
 .card-indication {
   display: flex;
   align-items: center;
