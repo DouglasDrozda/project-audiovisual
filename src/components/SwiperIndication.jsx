@@ -22,6 +22,7 @@ function SwiperApp() {
     }
 
     setActiveTouch(true);
+    return;
   }
 
   window.addEventListener('resize', () => {
