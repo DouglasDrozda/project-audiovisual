@@ -11,7 +11,9 @@ function Schedule() {
       </div>
       <div className="row mt-4">
         <div className="col-md-10 mx-auto">
+          {/* <!-- Timeline --> */}
           <div className="timeline timeline-one">
+            {/* <!-- Timeline Item 1 --> */}
             <div className="timeline-item">
               <h5 className="my-3 planejamento">PLANEJAMENTO</h5>
               <p className="description">
@@ -20,6 +22,7 @@ function Schedule() {
                 projeto, a dinâmica de gravação e o tom de voz para seu show.
               </p>
             </div>
+            {/* <!-- Timeline Item 2 --> */}
             <div className="timeline-item">
               <h5 className="my-3 producao">PRODUÇÃO</h5>
               <p className="description">
@@ -29,6 +32,7 @@ function Schedule() {
                 consultorias.
               </p>
             </div>
+            {/* <!-- Timeline Item 3 --> */}
             <div className="timeline-item">
               <h5 className="my-3 edicao">EDIÇÃO</h5>
               <p className="description">
@@ -38,6 +42,7 @@ function Schedule() {
                 sonora do seu podcast e o adicionamos ao episódio finalizado.
               </p>
             </div>
+            {/* <!-- Timeline Item 4 --> */}
             <div className="timeline-item">
               <h5 className="my-3 distribuicao">DISTRIBUIÇÃO</h5>
               <p className="description">
@@ -48,6 +53,7 @@ function Schedule() {
               </p>
             </div>
           </div>
+          {/* <!--End of Timeline--> */}
         </div>
       </div>
     </section>
