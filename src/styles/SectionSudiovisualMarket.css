@@ -1,0 +1,85 @@
+:root {
+  --white-color: #ffffff;
+}
+
+.section-market {
+  margin-top: 56%;
+  width: 100%;
+
+  background: url("../assets/images/background-tendencia.jpg") no-repeat;
+  background-size: cover;
+}
+
+.contente-market {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 86%;
+  min-height: 80vh;
+  margin: 0 auto;
+}
+
+.cont-market-1 h4 {
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+  font-size: calc(75% + 4.5vmin);
+  color: var(--white-color);
+}
+
+.cont-market-2 {
+  width: 50%;
+  margin-top: 78px;
+}
+
+.cont-market-2 p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(75% + 1.3vmin);
+
+  color: var(--white-color);
+}
+
+@media (max-width: 950px) {
+  .section-market {
+    margin-top: 68%;
+  }
+
+  .cont-market-1 h4 {
+    font-size: calc(75% + 2.5vmin);
+  }
+
+  .cont-market-2 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 800px) {
+  .cont-market-2 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 680px) {
+  .cont-market-1 h4 {
+    font-size: calc(31% + 4.5vmin);
+  }
+
+  .contente-market {
+    min-height: 80vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-market {
+    margin-top: 75%;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-market {
+    margin-top: 84%;
+  }
+}

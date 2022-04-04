@@ -1,0 +1,80 @@
+.marketplace-container {
+  align-items: center;
+  background-image: url("../assets/images/marketplace.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+  width: 100%;
+}
+
+.marketplace-sub-container {
+  align-items: center;
+  display: flex;
+  width: 90%;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.marketplace-sub-container h2 {
+  color: #ffff;
+  font-size: calc(75% + 3.5vmin);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-top: 50px;
+  letter-spacing: 0.5rem;
+}
+
+.marketplace-text {
+  margin-top: 20px;
+  width: 60%;
+}
+
+.marketplace-text img {
+  margin: 0 10px;
+  width: 40px;
+}
+
+.marketplace-text p {
+  color: #ffff;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(75% + 1.2vmin);
+  text-align: left;
+}
+
+.marketplace-text .name {
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+  font-size: calc(75% + 1vmin);
+}
+
+@media (max-width: 1167px) {
+  .marketplace-text {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1020px) {
+  .marketplace-text {
+    width: 90%;
+  }
+}
+
+@media (max-width: 601px) {
+  .marketplace-sub-container h2 {
+    letter-spacing: 0.2rem;
+  }
+
+  .marketplace-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .marketplace-sub-container h2 {
+    letter-spacing: 0.1rem;
+  }
+}
