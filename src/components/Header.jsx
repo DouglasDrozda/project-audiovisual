@@ -4,6 +4,7 @@ import { stack as Menu } from 'react-burger-menu';
 import ActiveScroll from '../functions/main';
 import '../styles/Header.css';
 import logoGustaFilms from '../assets/images/logoGustaFilms.png';
+import ScrollReveal from '../functions/scrollReveal';
 
 function Header() {
   const screenWidth = window.innerWidth;
@@ -12,6 +13,7 @@ function Header() {
     if (screenWidth >= 950) {
       ActiveScroll();
     }
+    ScrollReveal();
   }, []);
 
   return (
