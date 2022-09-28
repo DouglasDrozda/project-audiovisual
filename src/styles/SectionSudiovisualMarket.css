@@ -5,48 +5,81 @@
 .section-market {
   margin-top: 56%;
   width: 100%;
-
-  background: url("../assets/images/background-tendencia.jpg") no-repeat;
+  /* background-color: #1C1C1A; */
+  background: url("../assets/images/podcast-desk.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .contente-market {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-
   width: 86%;
-  min-height: 80vh;
+  min-height: 70vh;
   margin: 0 auto;
 }
 
-.cont-market-1 h4 {
-  text-align: center;
+.contente-market-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
 
+.cont-market-1 h1 {
+  letter-spacing: .5rem;
   font-family: "Poppins", sans-serif;
-  font-size: calc(75% + 4.5vmin);
+  font-size: calc(75% + 2.5rem);
   color: var(--white-color);
+}
+
+.cont-market-1 h2 {
+  /* text-align: center; */
+  font-family: "Poppins", sans-serif;
+  font-size: calc(75% + 1.2rem);
+  color: #C4C4CC;
 }
 
 .cont-market-2 {
-  width: 50%;
-  margin-top: 78px;
+  width: 80%;
+  margin-top: 2rem;
 }
 
 .cont-market-2 p {
-  text-align: center;
+  /* text-align: center; */
   font-family: "Roboto", sans-serif;
   font-size: calc(75% + 1.3vmin);
+  color: #C4C4CC;
+  /* color: var(--white-color); */
+}
 
-  color: var(--white-color);
+.market-img {
+  max-width: 600px;
+}
+
+.market-img img {
+  width: 100%;
+  height: auto;
+}
+
+.btn-about {
+  margin-top: 1.5rem;
+}
+
+.btn-about a {
+  background-color: #8257e5;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+
+.btn-about a:hover {
+  background-color: #734bd1;
 }
 
 @media (max-width: 950px) {
-  .cont-market-1 h4 {
-    font-size: calc(75% + 2.5vmin);
-  }
-
   .cont-market-2 {
     width: 70%;
   }
@@ -58,24 +91,24 @@
   }
 }
 
-@media (max-width: 680px) {
-  .cont-market-1 h4 {
-    font-size: calc(31% + 4.5vmin);
+@media (max-width: 500px) {
+  .cont-market-1 h1 {
+    font-size: calc(75% + 2.5vmin);
   }
 
-  .contente-market {
-    min-height: 80vh;
+  .cont-market-1 h2 {
+    font-size: calc(75% + 2.5vmin);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .section-market {
-    margin-top: 75%;
+    margin-top: 70%;
   }
 }
-
+/*
 @media (max-width: 400px) {
   .section-market {
     margin-top: 84%;
   }
-}
+} */

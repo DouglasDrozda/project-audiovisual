@@ -1,6 +1,6 @@
 .video-service-container {
   align-items: center;
-  background-image: url("../assets//images/videoService.jpg");
+  background-image: url("../assets/images/video-service.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -23,12 +23,11 @@
   font-size: calc(75% + 3.5vmin);
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  margin-bottom: 50px;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.8rem;
 }
 
 .video-service-text {
-  margin: 50px 0;
+  margin: 2rem 0;
   width: 40%;
 }
 

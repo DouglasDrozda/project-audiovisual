@@ -8,6 +8,7 @@ hr p {
   justify-content: center;
   align-items: center;
   background-color: #f4f3e5;
+  /* background: linear-gradient(270deg,#09090a,#121214); */
   flex-direction: column;
 }
 

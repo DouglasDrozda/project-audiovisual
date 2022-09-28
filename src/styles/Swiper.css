@@ -4,13 +4,16 @@
 }
 
 .swiper {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
 
 .swiper-wrapper {
+  max-width: 1440px;
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
   flex-wrap: wrap;
 }
 

@@ -56,6 +56,10 @@
   font-size: calc(75% + 1.2vmin);
 }
 
+.mt-4 {
+  padding: 1rem;
+}
+
 @media (max-width: 1562px) {
   .schedule-title h2 {
     font-size: calc(75% + 2.5vmin);
