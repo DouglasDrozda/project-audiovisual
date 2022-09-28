@@ -43,10 +43,6 @@
 }
 
 @media (max-width: 950px) {
-  .section-market {
-    margin-top: 68%;
-  }
-
   .cont-market-1 h4 {
     font-size: calc(75% + 2.5vmin);
   }
