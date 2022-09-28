@@ -13,12 +13,12 @@ import '../styles/Header.css';
 function Header() {
   const screenWidth = window.innerWidth;
 
-  // useEffect(() => {
-  //   if (screenWidth >= 950) {
-  //     ActiveScroll();
-  //   }
-  //   ScrollReveal();
-  // }, []);
+  useEffect(() => {
+    if (screenWidth >= 950) {
+      ActiveScroll();
+    }
+    ScrollReveal();
+  }, []);
 
   return (
     <div className="header-contain">
