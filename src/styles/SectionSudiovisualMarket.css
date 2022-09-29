@@ -3,7 +3,6 @@
 }
 
 .section-market {
-  margin-top: 56%;
   width: 100%;
   /* background-color: #1C1C1A; */
   background: url("../assets/images/podcast-desk.jpg") no-repeat;
@@ -102,13 +101,4 @@
 }
 
 @media (max-width: 768px) {
-  .section-market {
-    margin-top: 70%;
-  }
 }
-/*
-@media (max-width: 400px) {
-  .section-market {
-    margin-top: 84%;
-  }
-} */

@@ -6,29 +6,8 @@
 }
 
 .header-contain {
-  position: absolute;
   min-width: 100%;
   min-height: 100vh;
-}
-
-.video-header {
-  width: 100%;
-  height: 100%;
-  max-height: 60vh;
-}
-
-.video-header video {
-  width: 100%;
-}
-
-.ActiveScroll {
-  background-color: #0a0a0a;
-  display: flex;
-  width: 100%;
-  transition: 0.5s;
-  height: 120px;
-  position: fixed;
-  z-index: 50;
 }
 
 .header-container {
@@ -46,6 +25,31 @@
   margin: 20px;
   justify-content: space-between;
   width: 90%;
+}
+
+.video-header {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-header video {
+  width: 100vw;
+  object-fit: cover;
+  object-position: top right;
+  overflow: hidden;
+  height: 100%;
+}
+
+.ActiveScroll {
+  background-color: #0a0a0a;
+  display: flex;
+  width: 100%;
+  transition: 0.5s;
+  height: 120px;
+  position: fixed;
+  z-index: 50;
 }
 
 .nav-container {
@@ -197,7 +201,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 
-@media (min-aspect-ratio: 16/9) {
+/* @media (min-aspect-ratio: 16/9) {
   video {
     width: 100%;
     height: auto;
@@ -209,11 +213,18 @@ Note: Beware of modifying this element as it can break the animations - you shou
     width: auto;
     height: 100%;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .header-container {
     display: none;
+  }
+
+  .video-header video {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
   }
 
   .container-hamburger {
