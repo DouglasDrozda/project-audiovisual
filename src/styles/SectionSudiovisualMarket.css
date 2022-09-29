@@ -98,7 +98,9 @@
   .cont-market-1 h2 {
     font-size: calc(75% + 2.5vmin);
   }
-}
 
-@media (max-width: 768px) {
+  .btn-about a {
+    font-size: 0.8rem;
+    padding: 0.7rem;
+  }
 }
