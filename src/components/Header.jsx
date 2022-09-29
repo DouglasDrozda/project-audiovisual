@@ -32,7 +32,7 @@ function Header() {
             <a href="#comeceseupodcast">COMECE SEU PODCAST</a>
             <a href="#">SERVIÇOS</a>
             <a href="#portfolio">PORTFÓLIO</a>
-            <a href="#">CONTATO</a>
+            <a href="#contato">CONTATO</a>
           </nav>
         </div>
       </header>
@@ -43,7 +43,7 @@ function Header() {
           <a className="menu-item" href="#">SERVIÇOS</a>
           <a className="menu-item" href="#portfolio">PORTFÓLIO</a>
           <a className="menu-item" href="#">CONTATO</a>
-          <a href="#" target="_blank" className="btn-contact">PEDIR ORÇAMENTO</a>
+          <a href="#contato" target="_blank" className="btn-contact">PEDIR ORÇAMENTO</a>
         </Menu>
         <div className="container-sub-hamburger">
           <a href="#">

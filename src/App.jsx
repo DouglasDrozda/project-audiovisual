@@ -8,6 +8,8 @@ import SectionAboutCompany from './components/sections/SectionAboutCompany';
 import Marketplace from './components/sections/Marketplace';
 import SectionIndications from './components/sections/SectionIndications';
 import Portfolio from './components/sections/Portfolio';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <Marketplace />
       <SectionAboutCompany />
       <Portfolio />
+      <Contact />
+      <Footer />
     </main>
   );
 }
