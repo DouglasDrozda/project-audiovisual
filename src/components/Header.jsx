@@ -43,7 +43,7 @@ function Header() {
           <a className="menu-item" href="#">SERVIÇOS</a>
           <a className="menu-item" href="#portfolio">PORTFÓLIO</a>
           <a className="menu-item" href="#">CONTATO</a>
-          <a href="#contato" target="_blank" className="btn-contact">PEDIR ORÇAMENTO</a>
+          <a href="#contato" className="btn-contact">PEDIR ORÇAMENTO</a>
         </Menu>
         <div className="container-sub-hamburger">
           <a href="#">
