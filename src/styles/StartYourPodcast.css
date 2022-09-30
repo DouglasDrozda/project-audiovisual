@@ -1,0 +1,118 @@
+hr p {
+  margin: 0;
+}
+
+.section-podcast {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f3e5;
+  /* background: linear-gradient(270deg,#09090a,#121214); */
+  flex-direction: column;
+}
+
+.contente-podcast {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cont-podcast-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+  width: 100%;
+}
+
+.cont-podcast-header hr {
+  border: 1px solid black;
+  width: 20%;
+}
+
+.cont-podcast-header h2 {
+  font-size: calc(75% + 3.5vmin);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.cont-podcast-text h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: calc(75% + 1.8vmin);
+  color: #686868;
+  margin-bottom: 30px;
+}
+
+.paragraph {
+  width: 75%;
+}
+
+.paragraph p {
+  font-family: "Roboto", sans-serif;
+  font-size: calc(75% + 1.5vmin);
+  line-height: 1.7;
+}
+
+.cont-podcast-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card-podcast {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.card-podcast h3 {
+  margin: 10px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.cont-description p {
+  font-family: "Roboto", sans-serif;
+  color: #686868;
+}
+
+.cont-description {
+  width: 70%;
+}
+
+@media (max-width: 1562px) {
+  .cont-podcast-header h2 {
+    font-size: calc(75% + 2.5vmin);
+  }
+}
+
+@media (max-width: 785px) {
+  .paragraph {
+    width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  .cont-podcast-header h2 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 930px) {
+  .card-podcast {
+    width: 80%;
+  }
+}
+
+@media (max-width: 510px) {
+  .cont-podcast-header h2 {
+    font-size: calc(75% + 1.5vmin);
+  }
+}
