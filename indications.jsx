@@ -12,7 +12,7 @@ const data = [
   {
     img: subtitles,
     title: 'LEGENDAGEM DE VÍDEOS',
-    description: 'Exibição de textos sintéticos de forma sineronizada com os dialogos narração de um conteudo. deve ser realizada por um profissional especializado. Realizamos legendagem de diferentes línguas e assuntos, qualquer que seja o tempo de duração dos vídeos.',
+    description: 'Exibição de textos sintéticos de forma sincronizada com os diálogos e narração de um conteúdo, devem ser realizados por um profissional especializado. Realizamos legendagem de diferentes línguas e assuntos, qualquer que seja o tempo de duração dos vídeos.',
   },
   {
     img: webinar,

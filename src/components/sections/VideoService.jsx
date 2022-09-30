@@ -3,7 +3,7 @@ import '../../styles/VideoService.css';
 
 function VideoService() {
   return (
-    <section className="video-service-container">
+    <section className="video-service-container" id="servico">
       <div className="video-service-sub-container">
         <h2>SERVIÇOS DE VÍDEO</h2>
         <div className="video-service-text">

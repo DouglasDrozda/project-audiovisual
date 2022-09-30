@@ -30,7 +30,7 @@ function Header() {
           <nav className="nav-container">
             <a href="#sobre">SOBRE NÓS</a>
             <a href="#comeceseupodcast">COMECE SEU PODCAST</a>
-            <a href="#">SERVIÇOS</a>
+            <a href="#servico">SERVIÇOS</a>
             <a href="#portfolio">PORTFÓLIO</a>
             <a href="#contato">CONTATO</a>
           </nav>
@@ -40,9 +40,9 @@ function Header() {
         <Menu right>
           <a className="menu-item" href="#sobre">SOBRE NÓS</a>
           <a className="menu-item" href="#comeceseupodcast">COMECE SEU PODCAST</a>
-          <a className="menu-item" href="#">SERVIÇOS</a>
+          <a className="menu-item" href="#servico">SERVIÇOS</a>
           <a className="menu-item" href="#portfolio">PORTFÓLIO</a>
-          <a className="menu-item" href="#">CONTATO</a>
+          <a className="menu-item" href="#contato">CONTATO</a>
           <a href="#contato" className="btn-contact">PEDIR ORÇAMENTO</a>
         </Menu>
         <div className="container-sub-hamburger">
