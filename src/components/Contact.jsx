@@ -18,7 +18,7 @@ function Contact() {
           </div>
           <div className="contact">
             <p><b>Telefone</b>: (13) 99158-2789</p>
-            <p><b>E-mail</b>: xxxxx@xxxxxx.com.br</p>
+            <p><b>E-mail</b>: gustavonascimento@gustafilms.com.br</p>
           </div>
           <div className="contact-icons">
             <a href="https://wa.me/5513991582789?text=Desejo%20fazer%20um%20orçamento" target="_blank" rel="noreferrer">
@@ -29,7 +29,7 @@ function Contact() {
             </a>
           </div>
         </div>
-        <form action="https://formsubmit.co/gnascimento5458@gmail.com" method="POST">
+        <form action="https://formsubmit.co/gustavonascimento@gustafilms.com.br" method="POST">
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_next" value="http://localhost:3000/" />
           <div className="form-item">
