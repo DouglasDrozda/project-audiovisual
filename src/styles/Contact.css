@@ -56,6 +56,14 @@
   margin-top: 3rem;
 }
 
+.contact p b {
+  color: #fff !important;
+}
+
+.contact p:last-child {
+  color: #04d361;
+}
+
 .contact-icons {
   margin-top: 2rem;
   display: flex;
