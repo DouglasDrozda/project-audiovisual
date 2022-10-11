@@ -1,8 +1,17 @@
 import { InstagramLogo, WhatsappLogo } from 'phosphor-react';
 import React from 'react';
 import '../styles/Contact.css';
+import $ from 'jquery';
+import 'jquery-mask-plugin/dist/jquery.mask.min.js';
+import { useEffect } from 'react';
 
 function Contact() {
+  useEffect(() => {
+    $('input[name=tel]').mask('(00) 00000-0000', {
+      placeholder: '(00) 00000-0000'
+    });
+  }, [])
+
   return (
     <section className="contact-container" id="contato">
       <div className="contact-sub-container">
@@ -46,8 +55,8 @@ function Contact() {
           </div>
           <div className="form-item">
             <label htmlFor="tel">
-              Telefone / WhatsApp*
-              <input type="tel" id="tel" name="tel" required placeholder="Digite seu telefone" />
+              WhatsApp*
+              <input type="text" id="tel" name="tel" required placeholder="Digite seu telefone" />
             </label>
           </div>
           <div className="form-item">

@@ -6,6 +6,12 @@ import logoDouglas from '../assets/images/logoDouglas.svg';
 import '../styles/Footer.css';
 
 function Footer() {
+  const getYear = () => {
+    const date = new Date
+
+    return date.getFullYear()
+  }
+
   return (
     <section className="footer-container">
       <div className="footer-sub-container">
@@ -24,7 +30,7 @@ function Footer() {
             </a>
           </div>
           <div>
-            <p>Gusta Film’s © 2022 Todos os direitos Reservados.</p>
+            <p>Gusta Film{"'"}s &copy; {getYear()} Todos os direitos Reservados.</p>
           </div>
           <div className="footer-development">
             <p>
