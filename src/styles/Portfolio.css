@@ -162,8 +162,22 @@ iframe {
     height: 188px;
   } */
 
+  .modal-header {
+    width: 85%;
+  }
+
   iframe {
-    height: 240px;
+    height: 360px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .modal-header {
+    width: 95%;
+  }
+
+  iframe {
+    height: 200px;
   }
 }
 
