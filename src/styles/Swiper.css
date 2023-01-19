@@ -68,7 +68,7 @@
   }
 
   .btn-portfolio {
-    display: none;
+    display: none !important;
   }
 
   .swiper-slide {
