@@ -48,8 +48,30 @@
   width: 100%;
 }
 
+.btn-top {
+  background-color: #1c1c1a;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: 0;
+  margin: 9.5rem 1.5rem 0 0;
+}
+
 @media (max-width: 768px) {
   .footer-sub-container {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .btn-top {
+    width: 32px;
+    height: 32px;
+    margin-top: 15rem;
   }
 }

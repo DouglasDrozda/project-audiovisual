@@ -1,5 +1,5 @@
 import React from 'react';
-import { InstagramLogo, WhatsappLogo } from 'phosphor-react';
+import { CaretUp, InstagramLogo, WhatsappLogo } from 'phosphor-react';
 import logoGustaFilms from '../assets/images/logoGustaFilms.png';
 import logoDouglas from '../assets/images/logoDouglas.svg';
 
@@ -9,8 +9,8 @@ function Footer() {
   const getYear = () => {
     const date = new Date
 
-    return date.getFullYear()
-  }
+    return date.getFullYear();
+  };
 
   return (
     <section className="footer-container">
@@ -40,6 +40,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      <div onClick={() =>window.scroll(0, 0)} className="btn-top"><CaretUp size={26} color="#FFFFFF" /></div>
     </section>
   );
 }

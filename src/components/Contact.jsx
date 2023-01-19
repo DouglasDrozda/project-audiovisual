@@ -26,8 +26,8 @@ function Contact() {
             <p>É só preencher o formulário a seguir com a sua demanda.</p>
           </div>
           <div className="contact">
-            <p><b>Telefone</b>: (13) 99158-2789</p>
-            <p><b>E-mail</b>: gustavonascimento@gustafilms.com.br</p>
+            <p><b>Telefone:</b> (13) 99158-2789</p>
+            <p><b>E-mail:</b> gustavonascimento@gustafilms.com.br</p>
           </div>
           <div className="contact-icons">
             <a href="https://wa.me/5513991582789?text=Desejo%20fazer%20um%20orçamento" target="_blank" rel="noreferrer">
