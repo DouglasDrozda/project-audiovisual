@@ -1,48 +1,109 @@
-import imgTeste from '../assets/images/imgTeste.jpg';
-
-const data = {
-  video_1: {
+const data = [
+  {
     id: 1,
-    url: 'https://www-ccv.adobe.io/v1/player/ccv/LeaeEVK-_E4/embed?api_key=behance1&bgcolor=%23191919',
-    poster: 'https://cdn-prod-ccv.adobe.com/LeaeEVK-_E4/image/LeaeEVK-_E4_poster.jpg?hdnts=st%3D1646697123%7Eexp%3D1646956323%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FLeaeEVK-_E4%2Frend%2F*%21%2Fi%2FLeaeEVK-_E4%2Frend%2F*%21%2FLeaeEVK-_E4%2Frend%2F*%21%2FLeaeEVK-_E4%2Fimage%2F*%7Ehmac%3Dbc4066b3a7e5e9373fcbecc6a5e61ae0d5e4d9ed8fb6b9f7c9f25fae6fed7e04',
+    url: 'https://www.youtube.com/embed/I_DE-vruz_k',
+    poster: 'https://i.ytimg.com/vi_webp/I_DE-vruz_k/sddefault.webp',
     description: '',
     name: '',
   },
-  video_2: {
+  {
     id: 2,
-    url: 'https://www-ccv.adobe.io/v1/player/ccv/ABcD6VrMdDr/embed?api_key=behance1&bgcolor=%23191919',
-    poster: 'https://cdn-prod-ccv.adobe.com/ABcD6VrMdDr/image/ABcD6VrMdDr_poster.jpg?hdnts=st%3D1646699695%7Eexp%3D1646958895%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FABcD6VrMdDr%2Frend%2F*%21%2Fi%2FABcD6VrMdDr%2Frend%2F*%21%2FABcD6VrMdDr%2Frend%2F*%21%2FABcD6VrMdDr%2Fimage%2F*%7Ehmac%3D0a3822a588f759325f093e5957e62a1dc73aea8be0e8b901112513384e902894',
+    url: 'https://www.youtube.com/embed/z36HdrGq6n0',
+    poster: 'https://i.ytimg.com/vi_webp/z36HdrGq6n0/sddefault.webp',
     description: '',
     name: '',
   },
-  video_3: {
+  {
     id: 3,
-    url: 'https://www-ccv.adobe.io/v1/player/ccv/5_NPrZkBAA-/embed?api_key=behance1&bgcolor=%23191919',
-    poster: 'https://cdn-prod-ccv.adobe.com/5_NPrZkBAA-/image/5_NPrZkBAA-_poster.jpg?hdnts=st%3D1646699838%7Eexp%3D1646959038%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2F5_NPrZkBAA-%2Frend%2F*%21%2Fi%2F5_NPrZkBAA-%2Frend%2F*%21%2F5_NPrZkBAA-%2Frend%2F*%21%2F5_NPrZkBAA-%2Fimage%2F*%7Ehmac%3Dcb8c401afd9bad1fe52fc41cb89435885f0fba8a4b4b1edad5cb116642a4d459',
+    url: 'https://www.youtube.com/embed/kHVFq1VBZ84',
+    poster: 'https://i.ytimg.com/vi_webp/kHVFq1VBZ84/sddefault.webp',
     description: '',
     name: '',
   },
-  video_4: {
+  {
     id: 4,
-    url: 'https://player.vimeo.com/video/120680495?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0',
-    poster: imgTeste,
+    url: 'https://www.youtube.com/embed/ciulvjmqaGk',
+    poster: 'https://i.ytimg.com/vi_webp/ciulvjmqaGk/sddefault.webp',
     description: '',
     name: '',
   },
-  video_5: {
+  {
     id: 5,
-    url: 'https://player.vimeo.com/video/120680495?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0',
-    poster: imgTeste,
+    url: 'https://www.youtube.com/embed/My8nwFMfqf0',
+    poster: 'https://i.ytimg.com/vi_webp/My8nwFMfqf0/sddefault.webp',
     description: '',
     name: '',
   },
-  video_6: {
+  {
     id: 6,
-    url: 'https://player.vimeo.com/video/120680495?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0',
-    poster: imgTeste,
+    url: 'https://www.youtube.com/embed/vh6tt0GT_gU',
+    poster: 'https://i.ytimg.com/vi_webp/vh6tt0GT_gU/sddefault.webp',
     description: '',
     name: '',
   },
-};
+  {
+    id: 7,
+    url: 'https://www.youtube.com/embed/8RVvzErL9A4',
+    poster: 'https://i.ytimg.com/vi/8RVvzErL9A4/sddefault.jpg',
+    description: '',
+    name: '',
+  },
+  {
+    id: 8,
+    url: 'https://www.youtube.com/embed/qL6JQTK0YrY',
+    poster: 'https://i.ytimg.com/vi_webp/qL6JQTK0YrY/sddefault.webp',
+    description: '',
+    name: '',
+  },
+  {
+    id: 9,
+    url: 'https://www.youtube.com/embed/n2xiNya8OV4 ',
+    poster: 'https://i.ytimg.com/vi/n2xiNya8OV4/sddefault.jpg',
+    description: '',
+    name: '',
+  },
+  {
+    id: 10,
+    url: 'https://www-ccv.adobe.io/v1/player/ccv/LeaeEVK-_E4/embed?api_key=behance1&bgcolor=%23191919',
+    poster: 'https://cdn-prod-ccv.adobe.com/LeaeEVK-_E4/image/LeaeEVK-_E4_poster.jpg?hdnts=st%3D1674139095%7Eexp%3D1674398295%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FLeaeEVK-_E4%2Frend%2F*%21%2Fi%2FLeaeEVK-_E4%2Frend%2F*%21%2FLeaeEVK-_E4%2Frend%2F*%21%2FLeaeEVK-_E4%2Fimage%2F*%7Ehmac%3D33525ae7e7a32eb6c84dc3f686130dfdd097f2dc78f277927fa48cc8b36cbe33',
+    description: '',
+    name: '',
+  },
+  {
+    id: 11,
+    url: 'https://www.youtube.com/embed/zM0w5dG0sjY',
+    poster: 'https://i.ytimg.com/vi_webp/zM0w5dG0sjY/sddefault.webp',
+    description: '',
+    name: '',
+  },
+  {
+    id: 12,
+    url: 'https://www.youtube.com/embed/BohM2hR3DbQ',
+    poster: 'https://i.ytimg.com/vi/BohM2hR3DbQ/sddefault.jpg',
+    description: '',
+    name: '',
+  },
+  {
+    id: 13,
+    url: 'https://www.youtube.com/embed/hyPD5mfKFk0',
+    poster: 'https://i.ytimg.com/vi_webp/hyPD5mfKFk0/sddefault.webp',
+    description: '',
+    name: '',
+  },
+  {
+    id: 14,
+    url: 'https://www.youtube.com/embed/XoMakWgqgOM',
+    poster: 'https://i.ytimg.com/vi_webp/XoMakWgqgOM/sddefault.webp',
+    description: '',
+    name: '',
+  },
+  {
+    id: 15,
+    url: 'https://www-ccv.adobe.io/v1/player/ccv/4KLGqiDCyFa/embed?api_key=behance1&bgcolor=%23191919',
+    poster: 'https://cdn-prod-ccv.adobe.com/4KLGqiDCyFa/image/4KLGqiDCyFa_poster.jpg?hdnts=st%3D1674141716%7Eexp%3D1674400916%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2F4KLGqiDCyFa%2Frend%2F*%21%2Fi%2F4KLGqiDCyFa%2Frend%2F*%21%2F4KLGqiDCyFa%2Frend%2F*%21%2F4KLGqiDCyFa%2Fimage%2F*%7Ehmac%3D3903a481e181421aa01916693bd28a1045154fc472daaabe8c1ac10e3f956d32',
+    description: '',
+    name: '',
+  },
+];
 
 export default data;

@@ -13,7 +13,8 @@ import '../styles/Swiper.css';
 SwiperCore.use([Pagination]);
 
 function SwiperPortfolio({ handleClick, handleShow }) {
-  const [ activeTouch, setActiveTouch ] = useState();
+  const [activeTouch, setActiveTouch] = useState();
+  const [videoQuantity, setVideoQuantity] = useState(6);
 
   const displayVerify = () => {
     let screenWidth = window.innerWidth;
@@ -35,17 +36,26 @@ function SwiperPortfolio({ handleClick, handleShow }) {
     displayVerify();
   }, [])
 
+  const cardsVideoDefault = data.slice(0, videoQuantity)
+
+  function showCardVideo() {
+    if (videoQuantity === 6) {
+      return setVideoQuantity(15)
+    }
+    return setVideoQuantity(6)
+  }
+
   return (
     <div id="swiper-app">
       <Swiper
         pagination={{ dynamicBullets: true }}
-        allowSlideNext={ activeTouch }
-        allowSlidePrev={ activeTouch }
-        className="mySwiper main-swiper"
+        allowSlideNext={activeTouch}
+        allowSlidePrev={activeTouch}
+        className="mySwiper main-swiper portfolio-swiper"
       >
-       <div className="description-video-container">
+        <div className="description-video-container">
           {
-            Object.values(data).map((video) => (
+            cardsVideoDefault.map((video) => (
               <SwiperSlide key={video.id}>
                 <div className="description-video">
                   <video
@@ -53,7 +63,6 @@ function SwiperPortfolio({ handleClick, handleShow }) {
                     className="video_play"
                     onClick={
                       () => {
-                        console.log(video.url);
                         handleClick(video.url);
                         handleShow();
                       }
@@ -74,6 +83,9 @@ function SwiperPortfolio({ handleClick, handleShow }) {
               </SwiperSlide>
             ))
           }
+        </div>
+        <div className="btn-portfolio">
+          <button type="button" onClick={() => showCardVideo()}>{videoQuantity === 6 ? 'Ver mais' : 'Ver menos'}</button>
         </div>
       </Swiper>
     </div>

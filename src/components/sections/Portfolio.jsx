@@ -32,6 +32,8 @@ function Portfolio() {
             >
               <Modal.Header closeButton onClick={handleShow}>
                 <iframe
+                  width="560"
+                  height="315"
                   src={urlVideo}
                   title="video"
                   allow="autoplay; fullscreen; picture-in-picture"

@@ -10,6 +10,10 @@
   height: 100%;
 }
 
+.swiper.portfolio-swiper {
+  flex-direction: column;
+}
+
 .swiper-wrapper {
   max-width: 1440px;
   display: flex;
@@ -18,7 +22,8 @@
 }
 
 .swiper-slide {
-  width: 32% !important;
+  width: 350px !important;
+  margin: 0 1rem;
   flex-shrink: 1 !important;
   text-align: center;
   font-size: 18px;
@@ -45,10 +50,6 @@
   display: none;
 }
 
-.swiper-backface-hidden .swiper-slide {
-  padding: 5px 0;
-}
-
 @media (max-width: 930px) {
   .swiper-horizontal
     > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
@@ -64,5 +65,13 @@
   .swiper-wrapper {
     flex-wrap: nowrap !important;
     justify-content: flex-start !important;
+  }
+
+  .btn-portfolio {
+    display: none;
+  }
+
+  .swiper-slide {
+    margin: 0;
   }
 }
