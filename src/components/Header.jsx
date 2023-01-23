@@ -52,7 +52,7 @@ function Header() {
         </div>
       </div>
       <div className="video-header">
-        <video autoPlay muted loop controls>
+        <video autoPlay muted loop>
           <source src={video} type="video/mp4" />
         </video>
       </div>
